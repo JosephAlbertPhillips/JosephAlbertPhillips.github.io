@@ -2,7 +2,7 @@
 title:               Joseph Phillips
 tagline:             'Portfolio'
 description:         'My personal Website intended to display current and past projects I have worked on. Using a <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 https://josephalbertphillips.github.io/
+url:                 https://josephalbertphillips.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
