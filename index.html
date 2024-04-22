@@ -3,35 +3,24 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+<h1> Joseph Phillips </h1>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+<p> Hello. My name is Joseph, and this is my professional website. You can find my <a href="{{ site.url }}/research">research</a>, <a href="{{ site.url }}/projects">small projects</a>, and <a href="{{ site.url }}/posts">blog posts</a> on this website. 
+My research interests include Lean4 proof assistant, Constructive Logic, and Applied Category Theory. 
+I am presently applying for a Master's Degree in mathematics focusing on logic. 
+Please use the sidebar panel to view the website's additional content.</p>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div class="fav-container">
+  <a class="social-icon" href="https://linkedin.com/in/joseph-albert-phillips" target="_blank">
+    <ion-icon name="logo-linkedin"></ion-icon>
+  </a>
+  <a class="social-icon" href="https://github.com/JosephAlbertPhillips" target="_blank">
+    <ion-icon name="logo-github"></ion-icon>
+  </a>
+  <a class="social-icon" href="https://orcid.org/0009-0003-5097-8082" target="_blank">
+    <ion-icon src="{{ site.url }}/public/ORCIDiD_icon.svg"></ion-icon>
+  </a>
 </div>
